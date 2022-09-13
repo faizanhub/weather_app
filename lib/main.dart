@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:weather_app_techidaara/routes.dart';
 import 'package:weather_app_techidaara/ui/screens/splash_screen.dart';
 
 void main() {
@@ -12,11 +15,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Weather App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.poppinsTextTheme(
+          Theme.of(context).textTheme,
+        ),
       ),
-      home: const SplashScreen(),
+      // home: const SplashScreen(),
+      initialRoute: SplashScreen.routeName,
+      onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
 }
