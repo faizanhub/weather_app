@@ -30,14 +30,6 @@ class _SplashScreenState extends State<SplashScreen> {
         (route) => false,
       );
     });
-
-    // Future.delayed(const Duration(seconds: 3)).then((value) {
-    //   Navigator.pushNamedAndRemoveUntil(
-    //     context,
-    //     LandingScreen.routeName,
-    //     (route) => false,
-    //   );
-    // });
   }
 
   @override
@@ -58,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
               const SizedBox(),
               Image.asset('assets/images/splash.png'),
               const Text(
-                'Powered by Tech Idara',
+                'Powered by Weather Api',
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 17,

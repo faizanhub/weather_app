@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:weather_app_techidaara/routes.dart';
+import 'package:weather_app_techidaara/ui/screens/home_screen.dart';
 import 'package:weather_app_techidaara/ui/screens/splash_screen.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      // home: const SplashScreen(),
+      // home: const HomeScreen(),
       initialRoute: SplashScreen.routeName,
       onGenerateRoute: AppRoutes.onGenerateRoute,
     );
